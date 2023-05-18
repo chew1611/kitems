@@ -1,0 +1,258 @@
+.w-100{
+	height: auto;width: 34%;
+}.carousel-item{
+	width:100%;height: 500px;	background-color: rgba(0, 0,0,0.5);
+	filter: brightness(60%);
+}
+.tex{
+	position: relative;
+	height: 100%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+color: white;	font-weight: bold;background-color: rgba(0, 0,0,0.5);
+
+}
+.view-carousel {
+	width: 100%;
+	padding: 20px 48.4px;
+	box-sizing: border-box;
+	background: #efefef;
+	
+	display: block;
+	margin: 0;
+}
+@media screen and (min-width: 600px) {
+	.view-carousel {
+		padding-left: 80px;
+		padding-right: 80px;
+   }
+}
+.slick-list {
+	width: 100%;
+	overflow: hidden;
+}
+.view-content {
+	position: relative;
+}
+.view-content, .slick-track {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	width: 100%;
+}
+.views-row {
+	display: block;
+	flex: 0 0 auto;
+	margin: 5px;
+}
+.views-row:first-child {
+	margin-left: 10px;
+}
+.views-row:last-child {
+	margin-right: 10px;
+}
+.views-row > * {
+	max-width: 100%;
+}
+.carousel-button {
+	height:22.4px;
+	width: 32.4px;
+	line-height: 1.2;
+	color: orange;
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	font-size: 32px;
+	transform: translateY(-50%);
+	border: 0;
+	text-align: center;
+	padding: 0;
+	margin: 5px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+	transition: text-shadow 0.2s;
+	cursor: pointer;
+	background: transparent;
+}
+@media screen and (min-width: 600px) {
+	.carousel-button {
+		height: 60px;
+		width: 60px;
+		margin: 10px;
+		font-size: 50px;
+   }
+}
+.carousel-button:hover, .carousel-button:focus {
+	text-shadow: none;
+}
+.carousel-button.slick-disabled {
+	color: #ddd;
+	text-shadow: none;
+	cursor: not-allowed;
+	pointer-events: none;
+}
+.carousel-button--prev {
+	right: 100%;
+}
+@media screen and (min-width: 600px) {
+	.carousel-button--prev {
+		right: 100%;
+   }
+}
+.carousel-button--next {
+	left: 100%;
+}
+@media screen and (min-width: 600px) {
+	.carousel-button--next {
+		left: 100%;
+   }
+}
+.item-type-a {
+	box-shadow: 2px 2px 4px #000;
+	width: 235px;
+	
+}
+.item-type-a h3 {
+	text-align: center;
+	margin: 0.5em 0 0;
+}
+.item-type-a img {
+	width: 100%;
+}
+.item-type-b {
+	width: 100%;
+	padding: 10px 0 0;
+	background: #54bc3a;
+	
+}
+.item-type-b img {
+	width: 100%;
+	display: block;
+}
+.item-type-b h3 {
+	margin: 0.5em;
+}
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.slider {
+  position: relative;
+  width: 100vw;
+  height:50vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current {
+  opacity: 1;
+}
+
+.slide .content {
+  position: absolute;
+  bottom: -300px;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  background-color: rgba(229, 235, 243, 0.8);
+  color: #495b73;
+  padding: 1rem;
+  line-height: 1.3;
+}
+
+.slide .content h1 {
+  margin-bottom: 0.625rem;
+  color: #362a2b;
+  font-size: 1.5rem;
+}
+
+.slide.current .content {
+  opacity: 1;
+  transform: translateY(-300px);
+  transition: all 0.7s ease-in-out;
+}
+
+
+.buttons button#prev {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
+
+.buttons button#next {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.buttons button {
+
+  background-color: transparent;
+
+  cursor: pointer;
+  padding: 13px 15px;
+  border-radius: 50%;
+  outline: none;
+display: none;
+}
+
+.buttons button:hover {
+  background-color: #e5ebf3;
+  color: #362a2b;
+}
+
+@media (min-width: 640px) and (min-height: 640px) {
+  .slide .content {
+    bottom: 70px;
+    left: -600px;
+    width: 600px;
+    padding: 2rem;
+    line-height: 1.6;
+  }
+
+  .slide .content h1 {
+    font-size: 2rem;
+  }
+
+  .slide.current .content {
+    transform: translateX(600px);
+  }
+}
+.login{
+	border:1px solid white;
+	background-color: skyblue;width: 100%;
+}
+
+
+.sliderw {
+	position: relative;
+	max-width: 640px;
+  }
+  
+  .slidew {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: opacity 1s ease;
+	
+  }.active {
+	opacity: 1;
+  }
+  

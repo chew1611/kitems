@@ -1,0 +1,493 @@
+.demo-video-wrapper {
+    background-image: url(https://d3k5xyayaartr5.cloudfront.net/_assets/home-video/beach-waves-loop.jpg);
+}
+/* Video overlay and content */
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+   /* Allows right click menu on the video */
+    background: url('https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png') left top repeat;
+    opacity: 0.3;
+}
+.video-hero--content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 150px 0;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.video-hero--content h2 {
+    font-size: 34px;
+    margin: 0 0 10px; 
+}
+.video-hero--content p {
+    font-size: 20px;
+    margin: 0; 
+}
+/* Other stuff */
+
+a {
+    text-decoration: none;
+    color: #a46497;
+}
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.page-width {
+    width: 92%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#header {
+    background: #2c2d33;
+    padding: 2em 0;
+}
+#header a {
+    color: #fff;
+}
+.title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+.subtitle {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #959699;
+}
+a:hover .subtitle {
+    color: #fff;
+}
+#site-title {
+    float: left;
+    margin: 0;
+}
+#content {
+    padding: 40px 0;
+}
+/* CSS from jQuery Background Video plugin */
+/** * Set default positioning as a fallback for if the plugin fails */
+.jquery-background-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+}
+.jquery-background-video {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    top: 123%;
+    left: 50%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/** * Fade in videos * Note the .js class - so non js users still * see the video */
+.js .jquery-background-video {
+    opacity: 0;
+    -webkit-transition: opacity 300ms linear;
+    transition: opacity 300ms linear;
+}
+.js .jquery-background-video.is-visible {
+    opacity: 1;
+}
+/** * Pause/play button */
+.jquery-background-video-pauseplay {
+    position: absolute;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: 20px;
+    height: 20px;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    cursor: pointer;
+    outline: none !important;
+}
+.jquery-background-video-pauseplay span {
+    display: none;
+}
+.jquery-background-video-pauseplay:after, .jquery-background-video-pauseplay:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.jquery-background-video-pauseplay.play:before {
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+}
+.jquery-background-video-pauseplay.pause:before, .jquery-background-video-pauseplay.pause:after {
+    border-top: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    border-left: 5px solid #fff;
+}
+.jquery-background-video-pauseplay.pause:after {
+    left: 10px;
+}
+:root {
+   --img-test: whitesmoke;
+   --block-test: LightGray;
+   --btn-baclground-test: white;
+}
+.container {
+   height: 5vh;
+   display: flex;
+   align-items: center;
+   margin-top: 12%;
+ 
+ }
+ 
+ .prevn,
+ .nextn {
+   height: 100%;
+   width: 30vw;
+   display: flex;
+   align-items: center;
+ }
+ 
+ .prevn {
+   justify-content: end;
+ }
+ 
+ .nextn {
+   justify-content: start;
+ }
+ .gallery {
+	position: relative;
+	height: 70%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+  }
+  
+  .cardn {
+	position: absolute;
+	width: 30%;
+	transition: all 0.3s ease-in-out;
+  
+	overflow: hidden;
+  }
+  
+
+  .position1 {
+	left: 35%;
+	z-index: 3;
+	transform: scale(1);
+	opacity: 1;
+  }
+  
+  .position1:hover {
+	transform: scale(1.1);
+  }
+  
+  .position2 {
+	left: 65%;
+	z-index: 2;
+	transform: scale(0.8);
+	opacity: 0.6;
+  }
+  
+  .position3 {
+	left: 55%;
+	z-index: 1;
+	transform: scale(0.6);
+	opacity: 0.2;
+  }
+  
+  .position4 {
+	left: 15%;
+	z-index: 1;
+	transform: scale(0.6);
+	opacity: 0.2;
+  }
+  
+  .position5 {
+	left: 5%;
+	z-index: 2;
+	transform: scale(0.8);
+	opacity: 0.6;
+  }
+  
+  @media only screen and (max-width: 720px) {
+	.prevn,
+	.nextn {
+	  display: none;
+	}
+  
+	.container {
+	  align-items: flex-start;
+	}
+  
+	.heading {
+	  height: 20vh;
+	}
+  }
+   
+  @media only screen and (max-width: 500px) {
+	h1 {
+	  font-size: 3rem;
+	}
+  }
+  *::before,
+  *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+  }
+  
+ 
+  .bprr{
+	  border: 1px solid pink;
+	  background-color: pink;
+	  margin-top: 5%;height: 55vh;
+  }
+  .heading {
+	height: 55vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  h1 {
+	text-align: center;
+	color: white;
+	font-size: 5em;
+	text-shadow: 3px 3px 0 red, 6px 6px 0 green, 9px 9px 0 blue;
+  }
+  
+  .container {
+	height: 5vh;
+	display: flex;
+	align-items: center;
+	margin-top: 12%;
+  
+  } .prevn,
+  .nextn {
+	height: 100%;
+	width: 10vw;
+	display: flex;
+	align-items: center;
+  }
+  
+  .prevn {
+	justify-content: end;
+  }
+  
+  .nextn {
+	justify-content: start;
+  }
+
+  
+ 
+  
+  .gallery {
+	position: relative;
+	height: 70%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+  }
+  
+  .cardn {
+	position: absolute;
+	width: 30%;
+	transition: all 0.3s ease-in-out;
+  
+	overflow: hidden;
+  }
+  
+
+  
+  .position1 {
+	left: 35%;
+	z-index: 3;
+	transform: scale(1);
+	opacity: 1;
+  }
+  
+  .position1:hover {
+	transform: scale(1.1);
+  }
+  
+  .position2 {
+	left: 65%;
+	z-index: 2;
+	transform: scale(0.8);
+	opacity: 0.6;
+  }
+  
+  .position3 {
+	left: 55%;
+	z-index: 1;
+	transform: scale(0.6);
+	opacity: 0.2;
+  }
+  
+  .position4 {
+	left: 15%;
+	z-index: 1;
+	transform: scale(0.6);
+	opacity: 0.2;
+  }
+  
+  .position5 {
+	left: 5%;
+	z-index: 2;
+	transform: scale(0.8);
+	opacity: 0.6;
+  }
+  
+  @media only screen and (max-width: 720px) {
+	.prevn,
+	.nextn {
+	  display: none;
+	}
+  
+	.container {
+	  align-items: flex-start;
+	}
+  
+	.heading {
+	  height: 20vh;
+	}
+  }
+  
+  @media only screen and (max-width: 500px) {
+	h1 {
+	  font-size: 3rem;
+	}
+  }
+  .fa-arrow-circle-left{
+	width: 12px;
+  }
+  /*** css-var-setting ***/
+:root {
+    --img-test: whitesmoke;
+    --block-test: LightGray;
+    --btn-baclground-test: white;
+  }
+  
+  @mixin pad {
+    @media (max-width: 768px) {
+      @content;
+    }
+  }
+  @mixin mobile {
+    @media (max-width: 375px) {
+      @content;
+    }
+  }
+  
+  /* Card Carousel */
+  .card-carousel-container {
+    $navigation-distance: 5rem;
+    justify-content: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 110px 0 80px 0;
+    overflow: hidden;
+    background: {
+      image: url(https://www.tcbbank.com.tw/CreditCard/online/images/banner_bg.png);
+      repeat: no-repeat;
+      size: 100% 100%;margin-top:400px
+    }
+    @include pad {
+      $navigation-distance: 2rem;
+    }
+    @include mobile {
+      $navigation-distance: 1rem;
+    }
+    .card-carousel-button-next,
+    .card-carousel-button-prev {
+      position: absolute;
+      height: 100%;
+      z-index: 99;
+      top: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+    }
+    .card-carousel-button-next {
+      right: $navigation-distance;
+    }
+    .card-carousel-button-prev {
+      left: $navigation-distance;
+    }
+    .card-carousel {
+      width: 930px;
+      height: 300px;
+      position: relative;
+      clear: both;
+      > div.wwkt {
+        display: inline-block;
+        cursor: pointer;
+        img {
+          display: inline-block;
+          width: 100%;
+          height: 100%;
+        }
+        .card-content {
+          position: relative;
+          visibility: hidden;
+          z-index: -1;
+          padding: 10px 0;
+          display: flex;
+          gap: 0.5rem;
+          flex-direction: column;
+          > b {
+            font-size: 1.5rem;
+          }
+          > span {
+            display: block;
+            font-size: 1rem;
+          }
+          > .btn-group {
+            display: flex;
+            gap: 12px;
+            > a {
+              > input {
+                border: 1px solid #d60000;
+                cursor: pointer;
+                width: 100%;
+                background: #d60000;
+                color: #fff;
+                padding: 0.25rem 0.5rem;
+                &:hover {
+                  cursor: pointer;
+                  background: #fff;
+                  color: #d60000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,20 @@
+<html>
+<head>
+   <title>Print checked button values on another page- JavaScript.</title>
+</head>
+<body>
+   <h1>Page2</h1>
+   <hr/>
+   The Selected course is: <b><span id="result"></span></b>
+   <script>
+      var arr=localStorage.getItem("ddvalue");
+     // var str=arr;
+      arr=arr.split("");
+      var selectedItems = "";
+      for (var i = 0; i < arr.length; i++) {
+         selectedItems += "<br>" + arr[i] ;
+      }
+      document.getElementById("result").innerHTML= selectedItems;
+   </script>
+</body>
+</html>
